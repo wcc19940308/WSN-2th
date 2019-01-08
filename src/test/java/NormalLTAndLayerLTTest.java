@@ -15,6 +15,15 @@ import java.util.Map;
 public class NormalLTAndLayerLTTest
 {
     public static void main(String[] args) throws IOException {
+        long start = System.currentTimeMillis();
+
+        for (int i = 1; i <= 10; i++) {
+            Config.DESTORY_RATIO += 0.01;
+            init();
+        }
+    }
+
+    public static void init() throws IOException {
         Experiment normalExperiment = new Experiment(1000, 1000, 0,
                 5000, 10000, 50);
 
@@ -44,7 +53,6 @@ public class NormalLTAndLayerLTTest
 
         List<Sink> list = new ArrayList<>(Arrays.asList(normalSink, layerSink, normalLTSink));
         draw(list);
-
     }
 
     public static void getResult(Sink s1, Sink s2, Sink s3) {
@@ -73,7 +81,7 @@ public class NormalLTAndLayerLTTest
 
         int width = 800; /* Width of the image */
         int height = 800; /* Height of the image */
-        File barChart = new File( "G:/lab/LabGraph/noLayerAndNoRegionDecoding.jpg" );
+        File barChart = new File( "G:/lab/LabGraph/"+Config.DESTORY_RATIO+"noLayerAndNoRegionDecoding.jpg" );
         ChartUtilities.saveChartAsJPEG(barChart ,barChartObject, width ,height);
     }
 }

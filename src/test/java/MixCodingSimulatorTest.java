@@ -71,7 +71,7 @@ public class MixCodingSimulatorTest {
         DegreeDistribution regionDegreeDistribution = new LTDegreeDistribution(cofficient_of_c, 0.05, 5000/partitionNum);
 
 //        DegreeDistribution degreeDistribution = new LTDegreeDistribution(0.01,0.05,8);
- //       DegreeDistribution regionDegreeDistribution = new LTDegreeDistribution(0.01, 0.05, 8/4);
+        //       DegreeDistribution regionDegreeDistribution = new LTDegreeDistribution(0.01, 0.05, 8/4);
 
         LTSimulator normalLTSimulator = new LTSimulator(
                 new SpaceHelper(normalExperiment, degreeDistribution, NodeTypeEnum.LT));
@@ -92,7 +92,7 @@ public class MixCodingSimulatorTest {
 
         getResult(normalSink, layerSink, regionSink, layerAndRegionSink);
         //getResult(normalSink, layerSink, regionSink, layerAndRegionSink, normalByLayerSink);
-         draw(partitionNum,normalSink, layerSink, regionSink, layerAndRegionSink);
+        draw(partitionNum,normalSink, layerSink, regionSink, layerAndRegionSink);
         //getResult(normalSink, layerSink, normalByLayerSink, layerAndRegionSink);
         //draw(Config.WALK_LENGTH,cofficient_of_c,normalSink, layerSink, normalByLayerSink, layerAndRegionSink);
 
@@ -145,7 +145,7 @@ public class MixCodingSimulatorTest {
         int width = 800; /* Width of the image */
         int height = 800; /* Height of the image */
         String mkDirectoryPath = "G:/lab/LabGraph/123/" + cofficient_of_c + "系数";
-        mkDirector(mkDirectoryPath);
+        Utils.mkDirector(mkDirectoryPath);
         File barChart = new File(mkDirectoryPath+"/"+walkLength+"walkLength "+cofficient+"cofficient.jpg");
         //File barChart = new File("G:/lab/LabGraph/"+indexId+"partition decoding.jpg");
         ChartUtilities.saveChartAsJPEG(barChart, barChartObject, width, height);
@@ -172,7 +172,7 @@ public class MixCodingSimulatorTest {
         int width = 800; /* Width of the image */
         int height = 800; /* Height of the image */
         String mkDirectoryPath = "G:/lab/LabGraph/123/" + cofficient_of_c + "系数";
-        mkDirector(mkDirectoryPath);
+        Utils.mkDirector(mkDirectoryPath);
         File barChart = new File(mkDirectoryPath+"/"+indexId+"partition mixdecoding.jpg");
         //File barChart = new File("G:/lab/LabGraph/"+indexId+"partition decoding.jpg");
         ChartUtilities.saveChartAsJPEG(barChart, barChartObject, width, height);
@@ -201,19 +201,5 @@ public class MixCodingSimulatorTest {
         ChartUtilities.saveChartAsJPEG(barChart, barChartObject, width, height);
     }
 
-    public static boolean mkDirector(String path) {
-        File file = null;
-        try {
-            file = new File(path);
-            if (!file.exists()) {
-                return file.mkdir();
-            } else {
-                return false;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
 
 }

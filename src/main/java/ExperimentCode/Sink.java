@@ -35,7 +35,6 @@ public class Sink {
                     return o1.hashCode() - o2.hashCode();
                 } else {
                     return o1.size() - o2.size();
-                    return;
                 }
             }
         });
@@ -65,7 +64,7 @@ public class Sink {
         for (int nodeId : nodes.keySet()) {
             Node curNode = nodes.get(nodeId);
             // 如果是最外层的节点，那么就需要有一个存储有内层节点传送过来的用于解码阶段的数据包信息
-            if (curNode.getLayer() == 1) {
+            if (curNode.getLayer() == 1 && curNode.getState() == StateEnum.ALIVE) {
                 curNode.cacheQueue = new LinkedList<DecodingPackage>();
                 // 在Sink的列表中添加层数为1的节点
                 outerNodes.add(curNode);
@@ -74,90 +73,109 @@ public class Sink {
         System.out.println("一共有"+outerNodes.size()+"个最外层节点");
     }
 
-    // 解码阶段
-    // 先将全部的节点上存储的信息以数据包的形式传送到最外层节点上
-    // 然后由sink节点从最外层节点上收集相应的数据包
 
+    /***
+     * 解码阶段
+     * 先将全部的节点上存储的信息以数据包的形式传送到最外层节点上
+     * 然后由sink节点从最外层节点上收集相应的数据包
+     */
 
     // 将全部节点上存储的信息以低度包高度的数据包的形式传送到最外层节点上
     public void sendDecodingPackage() {
+        System.out.println("======= begin sendDecodingPackage =======");
         Map<Integer, Node> nodes = simulator.getNodes();
         int maxDegree = simulator.getSpaceHelper().getExperiment().getSensorCount();
         // 按度从低到高遍历所有节点，并按顺序将数据包传递到最外层节点上
         for (int i=1; i<=maxDegree; i++) {
             for (int nodeId : nodes.keySet()) {
                 Node curNode = nodes.get(nodeId);
-                // 当前节点的邻居轮询序号
-                //int index = curNode.getLoadBalanceIndex();
-                // 如果当前节点存储的度为需要的度，则将他的数据用数据包形式沿层向外层节点传递
-                // 这里的度是节点真实的度，即收到的数据包的总数
-                if (curNode.getPackList().size() == i) {
-                    // 如果是需要的度，则产生需要传送给最外层节点的解码数据包,解码数据包的data队列直接引用node的队列就可以了
-                    DecodingPackage decodingPackage =
-                            new DecodingPackage(i, curNode.getData(), curNode.getId(),curNode.getPackList());
-                    decodingPackageNum++;
-                    // 只要当前数据包所处的节点的位置的层数不为1，那么一直往外层传，直到传到层数为1的节点上为止
-                    while (nodes.get(decodingPackage.getCurId()).layer != 1) {
-                        Node currentNode = nodes.get(decodingPackage.getCurId());
-                        currentNode.detectNeighbors();
-                        List<Node> neighbors = currentNode.getNeighbors();
-                        // 当前节点的邻居轮询序号
-                        int loadBalanceIndex = currentNode.getLoadBalanceIndex();
-                        // 轮询调度周围的邻居节点，查找需要传送的节点，负载均匀
-                        // count记录了已经轮询了的邻居数量，如果查遍了所有的邻居节点都找不到，则表示这个数据包无法传送到sink
-                        int count = 0;
-                        int size = neighbors.size();
-                        while (count != size) {
-                            loadBalanceIndex = (loadBalanceIndex + 1) % size;
-                            Node neighborNode = neighbors.get(loadBalanceIndex);
-                            if (neighborNode.getLayer() == currentNode.getLayer() - 1) {
-                                decodingPackage.setCurId(neighborNode.getId());
-                                currentNode.setLoadBalanceIndex(loadBalanceIndex);
+                /***
+                 * 如果当前节点存储的度为需要的度，则将他的数据用数据包形式沿层向外层节点传递
+                 * 这里的度是节点真实的度，即收到的数据包的总数
+                 * 这里还要检测节点是否存活
+                 */
+                if (curNode.getState() == StateEnum.ALIVE){
+                    if (curNode.getPackList().size() == i) {
+                        // 如果是需要的度，则产生需要传送给最外层节点的解码数据包,解码数据包的data队列直接引用node的队列就可以了
+                        DecodingPackage decodingPackage =
+                                new DecodingPackage(i, curNode.getData(), curNode.getId(), curNode.getPackList());
+                        decodingPackageNum++;
+                        // 只要当前数据包所处的节点的位置的层数不为1，那么一直往外层传，直到传到层数为1的节点上为止
+                        while (nodes.get(decodingPackage.getCurId()).layer != 1) {
+                            Node currentNode = nodes.get(decodingPackage.getCurId());
+                            // 检测还存活着的邻居
+                            currentNode.detectNeighbors();
+                            List<Node> neighbors = currentNode.getNeighbors();
+                            // 当前节点的邻居轮询序号
+                            int loadBalanceIndex = currentNode.getLoadBalanceIndex();
+                            // 轮询调度周围的邻居节点，查找需要传送的节点，负载均匀
+                            // count记录了已经轮询了的邻居数量，如果查遍了所有的邻居节点都找不到，则表示这个数据包无法传送到sink
+                            int count = 0;
+                            int size = neighbors.size();
+                            while (count != size) {
+                                loadBalanceIndex = (loadBalanceIndex + 1) % size;
+                                Node neighborNode = neighbors.get(loadBalanceIndex);
+                                if (neighborNode.getLayer() == currentNode.getLayer() - 1) {
+                                    decodingPackage.setCurId(neighborNode.getId());
+                                    currentNode.setLoadBalanceIndex(loadBalanceIndex);
+                                    break;
+                                }
+                                count++;
+                            }
+                            // 执行到这里是因为在邻居中已经找不到比自己层次号低的了，那么表示数据包可能是没办法往外传递了
+                            if (count == size) {
                                 break;
                             }
-                            count++;
                         }
-                    }
-                    // 如果当前节点已经是最外层的节点了,那么直接把数据包存下即可
-                    if (nodes.get(decodingPackage.getCurId()).layer == 1) {
-                        nodes.get(decodingPackage.getCurId()).getCacheQueue().offer(decodingPackage);
+                        // 如果当前节点已经是最外层的节点了,那么直接把数据包存下即可
+                        if (nodes.get(decodingPackage.getCurId()).layer == 1) {
+                            nodes.get(decodingPackage.getCurId()).getCacheQueue().offer(decodingPackage);
+                        }
                     }
                 }
             }
         }
+        System.out.println("======= end sendDecodingPackage =======");
 
     }
 
     // 将节点上的数据包随机发向最外层节点
     public void sendRandomDecodingPackage() {
+        System.out.println("======= begin sendRandomDecodingPackage =======");
         Map<Integer, Node> nodes = simulator.getNodes();
         for (int nodeId : nodes.keySet()) {
             Node curNode = nodes.get(nodeId);
-            DecodingPackage decodingPackage =
-                    new DecodingPackage(curNode.getPackList().size(), curNode.getData(), curNode.getId(), curNode.getPackList());
-            while (nodes.get(decodingPackage.getCurId()).layer != 1) {
-                Node currentNode = nodes.get(decodingPackage.getCurId());
-                currentNode.detectNeighbors();
-                List<Node> neighbors = currentNode.getNeighbors();
-                int loadBalanceIndex = currentNode.getLoadBalanceIndex();
-                int count = 0;
-                int size = neighbors.size();
-                while (count != size) {
-                    loadBalanceIndex = (loadBalanceIndex + 1) % size;
-                    Node neighborNode = neighbors.get(loadBalanceIndex);
-                    if (neighborNode.getLayer() == currentNode.getLayer() - 1) {
-                        decodingPackage.setCurId(neighborNode.getId());
-                        currentNode.setLoadBalanceIndex(loadBalanceIndex);
+            if (curNode.getState() == StateEnum.ALIVE) {
+                DecodingPackage decodingPackage =
+                        new DecodingPackage(curNode.getPackList().size(), curNode.getData(), curNode.getId(), curNode.getPackList());
+                while (nodes.get(decodingPackage.getCurId()).layer != 1) {
+                    Node currentNode = nodes.get(decodingPackage.getCurId());
+                    currentNode.detectNeighbors();
+                    List<Node> neighbors = currentNode.getNeighbors();
+                    int loadBalanceIndex = currentNode.getLoadBalanceIndex();
+                    int count = 0;
+                    int size = neighbors.size();
+                    while (count != size) {
+                        loadBalanceIndex = (loadBalanceIndex + 1) % size;
+                        Node neighborNode = neighbors.get(loadBalanceIndex);
+                        if (neighborNode.getLayer() == currentNode.getLayer() - 1) {
+                            decodingPackage.setCurId(neighborNode.getId());
+                            currentNode.setLoadBalanceIndex(loadBalanceIndex);
+                            break;
+                        }
+                        count++;
+                    }
+                    if (count == size) {
                         break;
                     }
-                    count++;
+                }
+                // 如果当前节点已经是最外层的节点了,那么直接把数据包存下即可
+                if (nodes.get(decodingPackage.getCurId()).layer == 1) {
+                    nodes.get(decodingPackage.getCurId()).getCacheQueue().offer(decodingPackage);
                 }
             }
-            // 如果当前节点已经是最外层的节点了,那么直接把数据包存下即可
-            if (nodes.get(decodingPackage.getCurId()).layer == 1) {
-                nodes.get(decodingPackage.getCurId()).getCacheQueue().offer(decodingPackage);
-            }
         }
+        System.out.println("======= end sendRandomDecodingPackage =======");
     }
 
     // 解码阶段,返回是否解码成功,此方法用于对于分层的解码
@@ -184,7 +202,7 @@ public class Sink {
                 while ((cacheQueue.size() != 0) && (cacheQueue.peek().getDegree() == i)) {
                     // 如果解出数据包的集合长度达到了感知节点的数据包数量k，那么表示已经恢复出所有的原始数据了
                     if (oneDegreeData.size() == maxDegree) {
-                        System.out.println("分区的成功恢复源数据，当前收到编码包数量为:"+packageNum);
+                        System.out.println("分层的成功恢复源数据，当前收到编码包数量为:"+packageNum);
                         return true;
                     }
                     // 如果是1度的包，那么直接加入到已解出的集合中
@@ -229,7 +247,7 @@ public class Sink {
         //decodeHighDegreeData();
         // 这里也需要做判断，因为有可能最后一个包解出来才完全解码
         if (oneDegreeData.size() == maxDegree) {
-            System.out.println("分区的成功恢复源数据，当前收到编码包数量为:"+packageNum);
+            System.out.println("分层的成功恢复源数据，当前收到编码包数量为:"+packageNum);
             return true;
         }
         return false;
@@ -264,7 +282,7 @@ public class Sink {
         //Node curNode = nodes.get(nodeId);
         for (int i=0; i<nodeArr.length; i++){
             if (oneDegreeData.size() == maxDegree) {
-                System.out.println("未分区的成功恢复源数据，当前收到编码包数量为:"+packageNum);
+                System.out.println("普通LT的成功恢复源数据，当前收到编码包数量为:"+packageNum);
                 return true;
             }
             Node curNode = nodes.get(nodeArr[i]);
@@ -302,12 +320,12 @@ public class Sink {
             }
             decodingRatio.put(++packageNum, oneDegreeData.size());
         }
-       // decodeHighDegreeData();
+        // decodeHighDegreeData();
         if (oneDegreeData.size() == maxDegree) {
-            System.out.println("分区的成功恢复源数据，当前收到编码包数量为:"+packageNum);
+            System.out.println("普通LT成功恢复源数据，当前收到编码包数量为:"+packageNum);
             return true;
         }
-        System.out.println("未分区的最终收到的数据包数量"+packageNum);
+        System.out.println("普通LT的最终收到的数据包数量"+packageNum);
         return false;
     }
 
@@ -343,9 +361,10 @@ public class Sink {
             }
         }
         if (oneDegreeData.size() == maxDegree) {
-            System.out.println("分区的成功恢复源数据，当前收到编码包数量为:"+packageNum);
+            System.out.println("分层的普通LT成功恢复源数据，当前收到编码包数量为:"+packageNum);
             return true;
         }
+        System.out.println("分层的普通LT最终收到的数据包数量"+packageNum);
         return false;
     }
 
@@ -356,7 +375,7 @@ public class Sink {
         double destoryCount = totalCount * DESTORY_RATIO;
         int[] destoryNodes = Utils.getRandoms(1, 10000, (int) destoryCount);
         for (int i = 0; i < destoryNodes.length; i++) {
-            nodes.get(i).setState(StateEnum.DIE);
+            nodes.get(destoryNodes[i]).setState(StateEnum.DIE);
         }
     }
 

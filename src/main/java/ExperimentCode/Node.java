@@ -62,10 +62,16 @@ public abstract class Node {
     public void detectNeighbors() {
         // 存活的节点才有资格探测邻居节点
         if (this.state == StateEnum.ALIVE) {
-            for (Node node : neighbors) {
-                if (node.state == StateEnum.DIE) {
-                    neighbors.remove(node);
-                }
+//            for (Node node : neighbors) {
+//                if (node.state == StateEnum.DIE) {
+//                    neighbors.remove(node);
+//                }
+//            }
+            Iterator<Node> neighborIterator = neighbors.iterator();
+            while (neighborIterator.hasNext()) {
+                Node node = neighborIterator.next();
+                if (node.state == StateEnum.DIE)
+                    neighborIterator.remove();
             }
         }
     }

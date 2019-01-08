@@ -1,5 +1,6 @@
 package ExperimentCode;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -30,5 +31,20 @@ public class Utils {
             listRandom.remove(index);
         }
         return randoms;
+    }
+
+    public static boolean mkDirector(String path) {
+        File file = null;
+        try {
+            file = new File(path);
+            if (!file.exists()) {
+                return file.mkdir();
+            } else {
+                return false;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }
