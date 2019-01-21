@@ -12,7 +12,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-import static ExperimentCode.Config.DESTORY_RATIO;
 
 @Getter
 @Setter
@@ -49,7 +48,7 @@ public class Sink {
             sendDecodingPackage();
             flag = layerDecode();
         } else if (type == NodeTypeEnum.LT || type==NodeTypeEnum.PARTITION_LT) {
-            flag = normalDecode();
+            flag = normalDecode(type);
         } else if (type == NodeTypeEnum.NORMAL_BY_LAYER_LT) {
             boost();
             sendRandomDecodingPackage();
@@ -70,7 +69,7 @@ public class Sink {
                 outerNodes.add(curNode);
             }
         }
-        System.out.println("一共有"+outerNodes.size()+"个最外层节点");
+        //System.out.println("一共有"+outerNodes.size()+"个最外层节点");
     }
 
 
@@ -82,7 +81,7 @@ public class Sink {
 
     // 将全部节点上存储的信息以低度包高度的数据包的形式传送到最外层节点上
     public void sendDecodingPackage() {
-        System.out.println("======= begin sendDecodingPackage =======");
+        //System.out.println("======= begin sendDecodingPackage =======");
         Map<Integer, Node> nodes = simulator.getNodes();
         int maxDegree = simulator.getSpaceHelper().getExperiment().getSensorCount();
         // 按度从低到高遍历所有节点，并按顺序将数据包传递到最外层节点上
@@ -135,7 +134,7 @@ public class Sink {
                 }
             }
         }
-        System.out.println("======= end sendDecodingPackage =======");
+        //System.out.println("======= end sendDecodingPackage =======");
 
     }
 
@@ -185,8 +184,8 @@ public class Sink {
         for (Node node : outerNodes) {
             num += node.getCacheQueue().size();
         }
-        System.out.println("在解码之前，最外层节点中一共存储了"+num+"个数据包");
-        System.out.println("一共有"+decodingPackageNum+"个解码用的编码数据包");
+        //System.out.println("在解码之前，最外层节点中一共存储了"+num+"个数据包");
+        //System.out.println("一共有"+decodingPackageNum+"个解码用的编码数据包");
 
         int maxDegree = simulator.getSpaceHelper().getExperiment().getSensorCount();
         //int index = 1;
@@ -273,7 +272,7 @@ public class Sink {
     }
 
     // 普通的解码，即没有分层的正常LT解码
-    public boolean normalDecode() {
+    public boolean normalDecode(NodeTypeEnum type) {
         Map<Integer, Node> nodes = simulator.getNodes();
         int maxDegree = simulator.getSpaceHelper().getExperiment().getSensorCount();
         int nodesNum = nodes.size();
@@ -282,7 +281,8 @@ public class Sink {
         //Node curNode = nodes.get(nodeId);
         for (int i=0; i<nodeArr.length; i++){
             if (oneDegreeData.size() == maxDegree) {
-                System.out.println("普通LT的成功恢复源数据，当前收到编码包数量为:"+packageNum);
+                System.out.println("普通LT成功恢复源数据，当前收到编码包数量为:" + packageNum
+                        + " 恢复的原始数据包数量为:" + oneDegreeData.size() + " 当前的破坏率为:" + Config.DESTORY_RATIO);
                 return true;
             }
             Node curNode = nodes.get(nodeArr[i]);
@@ -322,10 +322,17 @@ public class Sink {
         }
         // decodeHighDegreeData();
         if (oneDegreeData.size() == maxDegree) {
-            System.out.println("普通LT成功恢复源数据，当前收到编码包数量为:"+packageNum);
+            System.out.println("普通LT成功恢复源数据，当前收到编码包数量为:" + packageNum
+                    + " 恢复的原始数据包数量为:" + oneDegreeData.size() + " 当前的破坏率为:" + Config.DESTORY_RATIO);
             return true;
         }
-        System.out.println("普通LT的最终收到的数据包数量"+packageNum);
+        if (type == NodeTypeEnum.LT) {
+            System.out.println("普通LT的最终收到的数据包数量" + packageNum
+                    + " 恢复的原始数据包数量为:" + oneDegreeData.size() + " 当前的破坏率为:" + Config.DESTORY_RATIO);
+        } else if (type == NodeTypeEnum.PARTITION_LT) {
+            System.out.println("分区的LT最终收到的数据包数量" + packageNum
+                    + " 恢复的原始数据包数量为:" + oneDegreeData.size() + " 当前的破坏率为:" + Config.DESTORY_RATIO);
+        }
         return false;
     }
 
@@ -372,7 +379,7 @@ public class Sink {
     public void randomDestory() {
         Map<Integer, Node> nodes = simulator.getNodes();
         int totalCount = nodes.size();
-        double destoryCount = totalCount * DESTORY_RATIO;
+        double destoryCount = totalCount * Config.DESTORY_RATIO;
         int[] destoryNodes = Utils.getRandoms(1, 10000, (int) destoryCount);
         for (int i = 0; i < destoryNodes.length; i++) {
             nodes.get(destoryNodes[i]).setState(StateEnum.DIE);

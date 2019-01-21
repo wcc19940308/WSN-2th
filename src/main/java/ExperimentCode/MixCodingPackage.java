@@ -9,7 +9,7 @@ import java.util.List;
 // 一旦找到其他区的最高度数据包就直接进行编码存储
 @Getter
 @Setter
-public class MixCodingPackage {
+public class  MixCodingPackage {
     int curId; // 数据包当前所处的位置处的节点ID，用于标识当前数据包所在的位置
     int regionIndex = 0; // 数据包所属分区
     int walkLength; // 随机游走步长设置

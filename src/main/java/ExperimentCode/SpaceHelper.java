@@ -53,7 +53,8 @@ public class SpaceHelper {
                 }
             }
         }
-        System.out.println("感知节点拷贝数"+copyNum);
+
+        //System.out.println("感知节点拷贝数"+copyNum);
         // 其中key是节点的索引号，从1到10000
         return (HashMap<Integer, Node>) experiment.getNodes();
     }

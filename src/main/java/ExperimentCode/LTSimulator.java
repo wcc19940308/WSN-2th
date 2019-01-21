@@ -82,7 +82,7 @@ public class LTSimulator {
                 }
             }
         }
-        System.out.println("一共有"+packageId+"个感知节点产生的数据包");
+        //System.out.println("一共有"+packageId+"个感知节点产生的数据包");
     }
 
     // 初始化(更新)所有节点各自的转移表和概率区间

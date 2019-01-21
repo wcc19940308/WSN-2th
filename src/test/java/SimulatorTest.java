@@ -150,7 +150,7 @@ public class SimulatorTest {
 
         // System.out.println("发送的编码数据包"+sink.getDecodingPackageNum());
 
-        boolean flag = sink.normalDecode();
+        //boolean flag = sink.normalDecode();
         Map<Integer, Integer> decodingRatio = sink.getDecodingRatio();
 
         for (int index : decodingRatio.keySet()) {
@@ -158,7 +158,7 @@ public class SimulatorTest {
             System.out.println("收到编码包:"+index+"个，解出源数据:"+integer+"个");
         }
 
-        System.out.println(flag);
+        //System.out.println(flag);
 
         System.out.println(sink.getOneDegreeData().size());
 

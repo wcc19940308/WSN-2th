@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class MixCodingSimulatorTest {
 
-    public static double cofficient_of_c = 0;
+    public static double cofficient_of_c = 0.5;
     //public static int walk_length = Config.WALK_LENGTH;
 
     public static void main(String[] args) throws IOException {
@@ -64,8 +64,6 @@ public class MixCodingSimulatorTest {
         Experiment layerAndRegionExperiment = new Experiment(1000, 1000, 0,
                 5000, 10000, 40);
 
-        Experiment normalByLayerExperiment = new Experiment(1000, 1000, 0,
-                5000, 10000, 40);
 
         DegreeDistribution degreeDistribution = new LTDegreeDistribution(cofficient_of_c, 0.05, 5000);
         DegreeDistribution regionDegreeDistribution = new LTDegreeDistribution(cofficient_of_c, 0.05, 5000/partitionNum);
@@ -81,14 +79,11 @@ public class MixCodingSimulatorTest {
                 new SpaceHelper(layerExperiment, degreeDistribution, NodeTypeEnum.LAYER_LT));
         LTSimulator layerAndRegionTSimulator = new LTSimulator
                 (new SpaceHelper(layerAndRegionExperiment, regionDegreeDistribution, NodeTypeEnum.LAYER_AND_PARTITION_LT));
-        LTSimulator normalByLayerSimulator = new LTSimulator(
-                new SpaceHelper(normalExperiment, degreeDistribution, NodeTypeEnum.NORMAL_BY_LAYER_LT));
 
         Sink normalSink = new Sink(normalLTSimulator);
         Sink layerSink = new Sink(layerLTSimulator);
         Sink regionSink = new Sink(regionLTSimulator);
         Sink layerAndRegionSink = new Sink(layerAndRegionTSimulator);
-        Sink normalByLayerSink = new Sink(normalByLayerSimulator);
 
         getResult(normalSink, layerSink, regionSink, layerAndRegionSink);
         //getResult(normalSink, layerSink, regionSink, layerAndRegionSink, normalByLayerSink);
@@ -109,9 +104,9 @@ public class MixCodingSimulatorTest {
     public static void getResult (Sink s1, Sink s2, Sink s3, Sink s4){
         boolean res1 = s1.collectPackage(NodeTypeEnum.LT);
         boolean res2 = s2.collectPackage(NodeTypeEnum.LAYER_LT);
-        boolean res3 = s3.collectPackage(NodeTypeEnum.NORMAL_BY_LAYER_LT);
+        boolean res3 = s3.collectPackage(NodeTypeEnum.PARTITION_LT);
         boolean res4 = s4.collectPackage(NodeTypeEnum.LAYER_AND_PARTITION_LT);
-        System.out.println("普通LT:" + res1 + " 分层LT:" + res2 + " 普通LT分层收集方式:" + res3 + " 分层分区LT:" + res4);
+        System.out.println("普通LT:" + res1 + " 分层LT:" + res2 + " 普通LT分区收集方式:" + res3 + " 分层分区LT:" + res4);
     }
 
 //    public static void getResult(Sink s1, Sink s2, Sink s3, Sink s4, Sink s5) {
