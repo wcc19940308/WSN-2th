@@ -2,44 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed1a0262-67ec-455c-8cf8-978aa940f07a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ThreePartitionDestoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/AverageDegreeOfNewDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/EncodingNumberOfNewDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionDestroyExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheFourNewDegreeDistribution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheNumberOfAandB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/COfThreePartition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/CofAveargeDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/CofEncodingNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/CofPartitionAndLT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/CollectiData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/DifferentDestory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/DifferentRadius.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/LTandNewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/MOfPartitoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/NormalDecodingSituation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LabData/PartitionDestroy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentCode/MixCodingPackage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/MixCodingPackage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MixCodingSimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MixCodingSimulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NormalLTAndLayerLTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NormalLTAndLayerLTTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SimulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SimulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SingleMixCodingTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Demo/LineChart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Demo/LineChart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/CodingPackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/CodingPackage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/DecodingPackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/DecodingPackage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/DegreeDistribution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/DegreeDistribution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Experiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Experiment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTCodingNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/LTCodingNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTDegreeDistribution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/LTDegreeDistribution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTSensorNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/LTSensorNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTSimulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/LTSimulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LayerCodingNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/LayerCodingNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LayerSensorNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/LayerSensorNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/MixCodingPackage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/MixCodingPackage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/MyDegreeDistribution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/MyDegreeDistribution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/NodeTypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/NodeTypeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Partition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Partition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionAndLayerCodingNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionAndLayerCodingNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionAndLayerSensorNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionAndLayerSensorNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionCodingNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionCodingNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionSensorNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionSensorNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/SpaceHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/SpaceHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/StateEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/StateEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/WSN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/WSN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ExerciseDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExerciseDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ThreePartitionDestoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThreePartitionDestoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Demo/LineChart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/CodingPackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/DecodingPackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/DegreeDistribution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Experiment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTCodingNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTDegreeDistribution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTSensorNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LTSimulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LayerCodingNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/LayerSensorNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/MixCodingPackage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/MyDegreeDistribution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/NodeTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Partition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionAndLayerCodingNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionAndLayerSensorNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionCodingNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/PartitionSensorNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/SpaceHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/StateEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/WSN.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/DistrubutionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DistrubutionTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ExerciseDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExerciseDemo.class" afterDir="false" />
@@ -52,9 +68,9 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/SimulatorTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SimulatorTest$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SimulatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SimulatorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/SingleLTLayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SingleLTLayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SingleMixCodingTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ThreePartitionDestoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThreePartitionDestoryTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,38 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NormalLTAndLayerLTTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/NormalLTAndLayerLTTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="44" column="127" selection-start-line="43" selection-start-column="8" selection-end-line="44" selection-end-column="127" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpaceHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java">
+      <file leaf-file-name="NewDistributionDestroyExp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionDestroyExp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimulatorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SimulatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2548">
-              <caret line="153" column="61" selection-start-line="153" selection-start-column="61" selection-end-line="153" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreePartitionDestoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ThreePartitionDestoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="20" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="36" />
+              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,41 +94,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java">
+      <file leaf-file-name="TheFourNewDegreeDistribution.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheFourNewDegreeDistribution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="260">
+              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sink.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java">
+      <file leaf-file-name="LTDegreeDistribution.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="370" column="56" selection-start-line="370" selection-start-column="56" selection-end-line="370" selection-end-column="56" />
+            <state relative-caret-position="442">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/README.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1600">
-              <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LTSimulator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="362" column="44" lean-forward="true" selection-start-line="362" selection-start-column="44" selection-end-line="362" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -155,15 +126,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>checkDegree</find>
-      <find>initdegree</find>
       <find>get</find>
       <find>getNode</find>
       <find>regionIndex</find>
       <find>Config.PARTITION_NUM</find>
       <find>PARTITION_NUM</find>
       <find>partitionNum</find>
-      <find>decodingRatio</find>
       <find>nodes</find>
       <find>iterator</find>
       <find>begin</find>
@@ -173,7 +141,27 @@
       <find>分期</find>
       <find>普通LT的成功恢复源数据，当前收到编码包数量为</find>
       <find>randomdes</find>
+      <find>!queue</find>
+      <find>decodingPackageNum</find>
+      <find>decodingRatio</find>
+      <find>破坏</find>
+      <find>Destory</find>
+      <find>DESTORY_RATIO</find>
+      <find>destory</find>
+      <find>ELFC</find>
+      <find>LEFC</find>
+      <find>集中式LT需要的节点数量</find>
+      <find>R</find>
+      <find>普通LT成功恢复源数据</find>
+      <find>normalDecode</find>
+      <find>Range</find>
+      <find>StateEnum.ALIVE</find>
     </findStrings>
+    <replaceStrings>
+      <replace>LEFC</replace>
+      <replace />
+      <replace>LPFC</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -181,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/TestDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/NodeTypeEnum.java" />
         <option value="$PROJECT_DIR$/src/test/java/NormalLayerLTSimulatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SingleLTLayerTest.java" />
@@ -195,9 +182,35 @@
         <option value="$PROJECT_DIR$/src/test/java/MixCodingSimulatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/SimulatorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CollectiData.java" />
+        <option value="$PROJECT_DIR$/src/test/LabData/A-1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/CollectiData.java" />
         <option value="$PROJECT_DIR$/src/test/java/ThreePartitionDestoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/DifferentRadius.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestDemo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/PartitionDestroy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/DifferentDestory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/MOfPartitoin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/NormalDecodingSituation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ExerciseDemo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/COfThreePartition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/CofPartitionAndLT.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/CofEncodingNumber.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/CofAveargeDegree.java" />
         <option value="$PROJECT_DIR$/src/main/resources/README.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/LTandNewTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/EncodingNumberOfNewDistribution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/LabData/AverageDegreeOfNewDistribution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistribution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/Demo.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/AverageDegreeOfNewDistribution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheNumberOfAandB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheFourNewDegreeDistribution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionExp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionDestroyExp.java" />
       </list>
     </option>
   </component>
@@ -218,10 +231,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="width" value="1932" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -233,7 +246,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,14 +276,6 @@
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ExperimentCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,17 +291,29 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="DegreeDistributionOptimization" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="F:/idea/MultiThread" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -311,37 +327,67 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreePartitionDestoryTest">
+  <component name="RunManager" selected="Application.NewDistributionDestroyExp">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MixCodingSimulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MixCodingSimulatorTest" />
+    <configuration name="AverageDegreeOfNewDistribution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DegreeDistributionOptimization.AverageDegreeOfNewDistribution" />
       <module name="WSN" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DegreeDistributionOptimization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
-    <configuration name="NormalLTAndLayerLTTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NormalLTAndLayerLTTest" />
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DegreeDistributionOptimization.Demo" />
       <module name="WSN" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DegreeDistributionOptimization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
-    <configuration name="SingleLTLayerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SingleLTLayerTest" />
+    <configuration name="NewDistributionDestroyExp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DegreeDistributionOptimization.NewDistributionDestroyExp" />
       <module name="WSN" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DegreeDistributionOptimization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
+    <configuration name="TheFourNewDegreeDistribution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DegreeDistributionOptimization.TheFourNewDegreeDistribution" />
       <module name="WSN" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DegreeDistributionOptimization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
-    <configuration name="ThreePartitionDestoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ThreePartitionDestoryTest" />
+    <configuration name="TheNumberOfAandB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DegreeDistributionOptimization.TheNumberOfAandB" />
       <module name="WSN" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DegreeDistributionOptimization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -403,19 +449,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MixCodingSimulatorTest" />
-      <item itemvalue="Application.NormalLTAndLayerLTTest" />
-      <item itemvalue="Application.SingleLTLayerTest" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.ThreePartitionDestoryTest" />
+      <item itemvalue="Application.AverageDegreeOfNewDistribution" />
+      <item itemvalue="Application.Demo" />
+      <item itemvalue="Application.TheNumberOfAandB" />
+      <item itemvalue="Application.NewDistributionDestroyExp" />
+      <item itemvalue="Application.TheFourNewDegreeDistribution" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreePartitionDestoryTest" />
-        <item itemvalue="Application.MixCodingSimulatorTest" />
-        <item itemvalue="Application.NormalLTAndLayerLTTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.SingleLTLayerTest" />
+        <item itemvalue="Application.NewDistributionDestroyExp" />
+        <item itemvalue="Application.TheFourNewDegreeDistribution" />
+        <item itemvalue="Application.TheNumberOfAandB" />
+        <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.AverageDegreeOfNewDistribution" />
       </list>
     </recent_temporary>
   </component>
@@ -439,37 +485,62 @@
       <workItem from="1547000521377" duration="518000" />
       <workItem from="1547003048996" duration="2263000" />
       <workItem from="1547176232987" duration="593000" />
-      <workItem from="1547690499286" duration="20053000" />
+      <workItem from="1547690499286" duration="30234000" />
+      <workItem from="1550058085530" duration="2225000" />
+      <workItem from="1550131446277" duration="599000" />
+      <workItem from="1550214779042" duration="593000" />
+      <workItem from="1550239244923" duration="7531000" />
+      <workItem from="1550887418183" duration="8589000" />
+      <workItem from="1551075474556" duration="72668000" />
+      <workItem from="1552527480791" duration="1197000" />
+      <workItem from="1552531483089" duration="597000" />
+      <workItem from="1552632090948" duration="598000" />
+      <workItem from="1552632975563" duration="1389000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDemo_testDisribution - 2018.12.18 at 21h 53m 09s.xml">
-      <configuration name="TestDemo.testDisribution" configurationId="JUnit" />
+    <history-entry file="CollectiData_test - 2019.02.18 at 18h 15m 14s.xml">
+      <configuration name="CollectiData.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDemo_testPerformance - 2018.12.20 at 11h 50m 32s.xml">
-      <configuration name="TestDemo.testPerformance" configurationId="JUnit" />
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 55m 17s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDemo_testPerformance - 2018.12.20 at 11h 50m 52s.xml">
-      <configuration name="TestDemo.testPerformance" configurationId="JUnit" />
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 55m 28s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDemo_testPerformance - 2018.12.20 at 11h 51m 16s.xml">
-      <configuration name="TestDemo.testPerformance" configurationId="JUnit" />
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 57m 07s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDemo_testPerformance - 2018.12.20 at 11h 51m 23s.xml">
-      <configuration name="TestDemo.testPerformance" configurationId="JUnit" />
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 57m 36s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 57m 45s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 14h 45m 48s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 14h 46m 05s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 16h 29m 32s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.26 at 10h 06m 33s.xml">
+      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98251000" />
+    <option name="totallyTimeSpent" value="204418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.34787017" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3469388" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -477,13 +548,12 @@
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30933064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26122448" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25208333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25104168" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3296146" />
       <window_info anchor="right" id="ASM" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -494,11 +564,45 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296146" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29310346" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.34787017" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Maven Projects" order="10" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25208333" />
+      <window_info anchor="right" id="ASM" order="5" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296146" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29107505" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -511,239 +615,60 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java</url>
-          <line>378</line>
+          <line>360</line>
           <properties class="ExperimentCode.Sink" method="randomDestory">
             <option name="EMULATED" value="true" />
           </properties>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java</url>
-          <line>47</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/MixCodingSimulatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTCodingNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4380">
-          <caret line="234" column="28" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2680">
-          <caret line="138" column="29" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/StateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="73" lean-forward="true" selection-start-line="30" selection-start-column="73" selection-end-line="30" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MixCodingSimulatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4380">
-          <caret line="234" column="28" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2680">
-          <caret line="138" column="29" selection-start-line="138" selection-start-column="16" selection-end-line="138" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/StateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/StateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/WSN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Demo/LineChart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LayerSensorNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/PartitionAndLayerCodingNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/DecodingPackage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NormalLayerLTSimulatorTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTCodingNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/PartitionAndLayerSensorNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSensorNode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/PartitionCodingNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/NodeTypeEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/PartitionSensorNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="140">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://F:/java/src.zip!/java/util/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/StateEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="359" column="25" selection-start-line="359" selection-start-column="25" selection-end-line="359" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Experiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -754,31 +679,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/MixCodingPackage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/CodingPackage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SingleMixCodingTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTCodingNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Experiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/WSN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="80" column="64" selection-start-line="80" selection-start-column="64" selection-end-line="80" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/NodeTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/LabData/A-1.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/CollectiData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LayerCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MixForwardingTableTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MixCodingSimulatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="99" column="35" lean-forward="true" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ThreePartitionDestoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/COfThreePartition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ExerciseDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4580">
+          <caret line="265" column="31" selection-start-line="265" selection-start-column="31" selection-end-line="265" selection-end-column="31" />
+          <folding>
+            <element signature="e#3523#3541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NormalLTAndLayerLTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SimulatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2308">
+          <caret line="153" column="61" selection-start-line="153" selection-start-column="61" selection-end-line="153" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SingleLTLayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="300">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -789,88 +843,283 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MixForwardingTableTest.java">
+    <entry file="jar://F:/java/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="222">
+          <caret line="976" column="15" selection-start-line="976" selection-start-column="15" selection-end-line="976" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/CodingPackage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/CofPartitionAndLT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1220">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="69" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/CofEncodingNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MixCodingSimulatorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/CofAveargeDegree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        <state relative-caret-position="460">
+          <caret line="23" column="70" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/DegreeDistribution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="160">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ThreePartitionDestoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="36" />
+        <state relative-caret-position="-100">
+          <caret line="16" column="83" lean-forward="true" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheNumberOfAandB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="395">
+          <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NormalLTAndLayerLTTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/PartitionDestroy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="44" column="127" selection-start-line="43" selection-start-column="8" selection-end-line="44" selection-end-column="127" />
+        <state relative-caret-position="60">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SimulatorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/MOfPartitoin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2548">
-          <caret line="153" column="61" selection-start-line="153" selection-start-column="61" selection-end-line="153" selection-end-column="61" />
+        <state relative-caret-position="-260">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/LTandNewTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/DifferentRadius.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/DifferentDestory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/Demo.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/EncodingNumberOfNewDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/AverageDegreeOfNewDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="370" column="56" selection-start-line="370" selection-start-column="56" selection-end-line="370" selection-end-column="56" />
+        <state relative-caret-position="-1645">
+          <caret line="269" column="27" selection-start-line="269" selection-start-column="27" selection-end-line="269" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/README.txt">
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/NormalDecodingSituation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+        <state relative-caret-position="315">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DistrubutionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="362" column="44" lean-forward="true" selection-start-line="362" selection-start-column="44" selection-end-line="362" selection-end-column="44" />
+        <state relative-caret-position="40">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionDestroyExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheFourNewDegreeDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="true" />
+    <property name="dead" value="true" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="true" />
+    <property name="fileExtension" value="java" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="true" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="false" />
+    <property name="outputDirectory" value="" />
+    <property name="packFields" value="3" />
+    <property name="packImports" value="7" />
+    <property name="prefixNumericalClasses" value="_cls" />
+    <property name="prefixNumericalFields" value="_fld" />
+    <property name="prefixNumericalLocals" value="_lcl" />
+    <property name="prefixNumericalMethods" value="_mth" />
+    <property name="prefixNumericalParameters" value="_prm" />
+    <property name="prefixUnusedExceptions" value="_ex" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="sort" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>WSN</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.guava:guava:21.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

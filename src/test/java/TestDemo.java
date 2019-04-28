@@ -260,15 +260,17 @@ public class TestDemo {
 //        Experiment experiment = new Experiment(500,500,0,
 //                1000,2000,28);
 //        DegreeDistribution degreeDistribution = new LTDegreeDistribution(0.01,0.05,5000);
-        Experiment experiment = new Experiment(1000,1000,0,
-                5000,10000,30);
+//        Experiment experiment = new Experiment(1000,1000,0,
+//                6000,12000,26);
+        Experiment normalExperiment = new Experiment(1000, 1000, 0,
+                5000, 10000, 50);
         DegreeDistribution degreeDistribution = new LTDegreeDistribution(0.01,0.05,5000);
 
 //        Experiment experiment = new Experiment(1,0,
 //                5000,10000,0.033);
 //        DegreeDistribution degreeDistribution = new LTDegreeDistribution(0.01,0.05,5000);
 
-        SpaceHelper spaceHelper = new SpaceHelper(experiment, degreeDistribution,NodeTypeEnum.LAYER_AND_PARTITION_LT);
+        SpaceHelper spaceHelper = new SpaceHelper(normalExperiment, degreeDistribution,NodeTypeEnum.LAYER_AND_PARTITION_LT);
         HashMap<Integer, Node> nodes = spaceHelper.uniformGenerateNodes();
         // ¶È·Ö²¼
         spaceHelper.initDegree(nodes);
@@ -280,7 +282,7 @@ public class TestDemo {
             int size = node.getNeighbors().size();
             sum += size;
         }
-        System.out.println(sum/experiment.getTotalCount());
+        System.out.println(sum/normalExperiment.getTotalCount());
     }
 
 }

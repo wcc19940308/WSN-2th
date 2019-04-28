@@ -23,7 +23,6 @@ public class NormalLTAndLayerLTTest
                 init();
             }
         }
-
     }
 
     public static void init() throws IOException {

@@ -2,14 +2,6 @@ package ExperimentCode;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartUtilities;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.data.category.DefaultCategoryDataset;
-
-import java.io.File;
-import java.io.IOException;
 import java.util.*;
 
 
@@ -199,11 +191,6 @@ public class Sink {
                 }
                 // 因为开始传递的时候是按低度到高度的，因此队列中低度的数据一定是在队列前端的
                 while ((cacheQueue.size() != 0) && (cacheQueue.peek().getDegree() == i)) {
-                    // 如果解出数据包的集合长度达到了感知节点的数据包数量k，那么表示已经恢复出所有的原始数据了
-                    if (oneDegreeData.size() == maxDegree) {
-                        System.out.println("分层的成功恢复源数据，当前收到编码包数量为:"+packageNum);
-                        return true;
-                    }
                     // 如果是1度的包，那么直接加入到已解出的集合中
                     if (i == 1) {
                         oneDegreeData.add(cacheQueue.poll().getData());
@@ -246,9 +233,10 @@ public class Sink {
         //decodeHighDegreeData();
         // 这里也需要做判断，因为有可能最后一个包解出来才完全解码
         if (oneDegreeData.size() == maxDegree) {
-            System.out.println("分层的成功恢复源数据，当前收到编码包数量为:"+packageNum);
+            System.out.println("分层的成功恢复源数据，当前收到编码包数量为:"+packageNum+ "恢复的数据包数量" + oneDegreeData.size());
             return true;
         }
+        System.out.println("分层的失败恢复源数据，当前收到编码包数量为:"+packageNum+ "恢复的数据包数量" + oneDegreeData.size());
         return false;
     }
 
@@ -277,50 +265,44 @@ public class Sink {
         int maxDegree = simulator.getSpaceHelper().getExperiment().getSensorCount();
         int nodesNum = nodes.size();
         int[] nodeArr = Utils.getRandoms(1, nodesNum, nodesNum);
-        //for (int nodeId : nodes.keySet()) {
-        //Node curNode = nodes.get(nodeId);
         for (int i=0; i<nodeArr.length; i++){
-            if (oneDegreeData.size() == maxDegree) {
-                System.out.println("普通LT成功恢复源数据，当前收到编码包数量为:" + packageNum
-                        + " 恢复的原始数据包数量为:" + oneDegreeData.size() + " 当前的破坏率为:" + Config.DESTORY_RATIO);
-                return true;
-            }
             Node curNode = nodes.get(nodeArr[i]);
-            if (curNode.getPackList().size() == 0) {
-                decodingRatio.put(++packageNum, oneDegreeData.size());
-                continue;
-            }
-            // 如果是1度包那么直接就解出来了
-            if (curNode.getPackList().size() == 1) {
-                oneDegreeData.add(curNode.getData());
-            }
-            else {
-                List<Integer> dataList = curNode.getPackList();
-                int count = 0;
-                // 因为会消解dataList中已有的数据包，导致dataList改变，所以这里先记录一下之前的长度
-                int length = dataList.size();
-                Iterator<Integer> dataIterator = dataList.iterator();
-                // 用已知信息消解数据包
-                while (dataIterator.hasNext()) {
-                    Integer next = dataIterator.next();
-                    if (oneDegreeData.contains(next)) {
-                        dataIterator.remove();
-                        count++;
+            // 存活的节点才能够进行解码
+            if (curNode.getState() == StateEnum.ALIVE) {
+                if (curNode.getPackList().size() == 0) {
+                    decodingRatio.put(++packageNum, oneDegreeData.size());
+                    continue;
+                }
+                // 如果是1度包那么直接就解出来了
+                if (curNode.getPackList().size() == 1) {
+                    oneDegreeData.add(curNode.getData());
+                } else {
+                    List<Integer> dataList = curNode.getPackList();
+                    int count = 0;
+                    // 因为会消解dataList中已有的数据包，导致dataList改变，所以这里先记录一下之前的长度
+                    int length = dataList.size();
+                    Iterator<Integer> dataIterator = dataList.iterator();
+                    // 用已知信息消解数据包
+                    while (dataIterator.hasNext()) {
+                        Integer next = dataIterator.next();
+                        if (oneDegreeData.contains(next)) {
+                            dataIterator.remove();
+                            count++;
+                        }
+                    }
+                    // 如果count刚好等于n-1，则表示该数据包可以被解出
+                    if (count == length - 1) {
+                        oneDegreeData.add(dataList.get(0));
+                        // 如果又解出了新的1度包，那么就先去消解待解数据包集合中的数据
+                        decodeHighDegreeData();
+                    } else if (count < dataList.size() - 1) {
+                        // 当前还没解出的节点添加到未解出数据包集合中
+                        highDegreeData.add(dataList);
                     }
                 }
-                // 如果count刚好等于n-1，则表示该数据包可以被解出
-                if (count == length - 1) {
-                    oneDegreeData.add(dataList.get(0));
-                    // 如果又解出了新的1度包，那么就先去消解待解数据包集合中的数据
-                    decodeHighDegreeData();
-                } else if (count < dataList.size() - 1) {
-                    // 当前还没解出的节点添加到未解出数据包集合中
-                    highDegreeData.add(dataList);
-                }
+                decodingRatio.put(++packageNum, oneDegreeData.size());
             }
-            decodingRatio.put(++packageNum, oneDegreeData.size());
         }
-        // decodeHighDegreeData();
         if (oneDegreeData.size() == maxDegree) {
             System.out.println("普通LT成功恢复源数据，当前收到编码包数量为:" + packageNum
                     + " 恢复的原始数据包数量为:" + oneDegreeData.size() + " 当前的破坏率为:" + Config.DESTORY_RATIO);
@@ -368,10 +350,10 @@ public class Sink {
             }
         }
         if (oneDegreeData.size() == maxDegree) {
-            System.out.println("分层的普通LT成功恢复源数据，当前收到编码包数量为:"+packageNum);
+            System.out.println("分层的普通LT成功恢复源数据，当前收到编码包数量为:" + packageNum + "恢复的数据包数量" + oneDegreeData.size());
             return true;
         }
-        System.out.println("分层的普通LT最终收到的数据包数量"+packageNum);
+        System.out.println("分层的普通LT失败最终收到的数据包数量" + packageNum + "恢复的数据包数量" + oneDegreeData.size());
         return false;
     }
 

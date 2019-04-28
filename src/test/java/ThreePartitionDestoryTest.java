@@ -19,7 +19,7 @@ public class ThreePartitionDestoryTest {
             cofficient_of_c = cofficient_of_c + 0.01;
             Config.DESTORY_RATIO = 0;
             for (int i = 1; i <= 15; i++) {
-                Config.DESTORY_RATIO += 0.01;
+                //Config.DESTORY_RATIO += 0.01;
                 init(Config.PARTITION_NUM);
             }
         }
@@ -33,13 +33,6 @@ public class ThreePartitionDestoryTest {
         Experiment regionExperiment = new Experiment(1000, 1000, 0,
                 5000, 10000, 40);
 
-//        Experiment layerExperiment = new Experiment(1000, 1000, 0,
-//                5000, 10000, 40);
-//
-//        Experiment normalLayerLTExperiment = new Experiment(1000, 1000, 0,
-//                5000, 10000, 40);
-
-
         DegreeDistribution degreeDistribution = new LTDegreeDistribution(cofficient_of_c, 0.05, 5000);
         DegreeDistribution regionDegreeDistribution = new LTDegreeDistribution(cofficient_of_c, 0.05, 5000/partitionNum);
 
@@ -47,22 +40,12 @@ public class ThreePartitionDestoryTest {
                 new SpaceHelper(normalExperiment, degreeDistribution, NodeTypeEnum.LT));
         LTSimulator regionLTSimulator = new LTSimulator(
                 new SpaceHelper(regionExperiment, regionDegreeDistribution, NodeTypeEnum.PARTITION_LT));
-//        LTSimulator layerLTSimulator = new LTSimulator(
-//                new SpaceHelper(layerExperiment, degreeDistribution, NodeTypeEnum.LAYER_LT));
-//        LTSimulator normalLayerLTSimulator =
-//                new LTSimulator(new SpaceHelper(normalLayerLTExperiment, degreeDistribution, NodeTypeEnum.NORMAL_BY_LAYER_LT));
 
         Sink normalSink = new Sink(normalLTSimulator);
         Sink regionSink = new Sink(regionLTSimulator);
-//        Sink layerSink = new Sink(layerLTSimulator);
-//        Sink normalLayerSink = new Sink(normalLayerLTSimulator);
 
         getResult(normalSink, regionSink);
         draw(normalSink, regionSink);
-
-
-//        getResult(normalSink, layerSink, regionSink, normalLayerSink);
-//        draw(partitionNum,normalSink, layerSink, regionSink, normalLayerSink);
     }
 
     public static void getResult (Sink s1, Sink s2){

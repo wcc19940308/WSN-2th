@@ -9,7 +9,7 @@ import java.util.Map;
 
 @Getter
 @Setter
-public class LTDegreeDistribution extends DegreeDistribution{
+public class LTDegreeDistribution extends ExperimentCode.DegreeDistribution {
     double c; // 系数c
     double δ; // 系数δ
     double k; // 感知数量k
@@ -19,7 +19,7 @@ public class LTDegreeDistribution extends DegreeDistribution{
     public LTDegreeDistribution(double c, double δ, double k) {
         this.c = c;
         this.δ = δ;
-        this.k = k;
+        this.k = Math.ceil(k);
         this.R = c * Math.log(k / δ) * Math.sqrt(k);
         this.peak = Math.ceil(k / R);
         System.out.println("集中式LT需要的节点数量：" + (k + c * Math.sqrt(k) * Math.log(k / δ) * Math.log(k / δ)));
