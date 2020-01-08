@@ -86,7 +86,7 @@ public class WSN {
         long start = System.currentTimeMillis();
         init();
         long end = System.currentTimeMillis();
-        System.out.println("一次实验需要:"+(end-start)/1000);
+        System.out.println("一次实验需要:" + (end - start) / 1000);
 
     }
 }

@@ -13,6 +13,7 @@ public class Utils {
         return random.nextInt( max - min + 1 ) + min;
     }
 
+    // 用于随机从min到max不重复的数中产生count个，返回count个数组成的数组
     public  static int[] getRandoms(int min, int max, int count){
         int[] randoms = new int[count];
         List<Integer> listRandom = new ArrayList<Integer>();

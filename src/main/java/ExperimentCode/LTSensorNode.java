@@ -19,17 +19,23 @@ public class LTSensorNode extends Node{
     }
 
     // 初始化每个感知节点需要发送的数据包数量b
-    public int initCopyNum(Experiment experiment, DegreeDistribution degreeDistribution) {
+    public int initCopyNum(Experiment experiment, DegreeDistribution degreeDistribution, NodeTypeEnum type) {
         Map<Double, Double> robustSolitonDistribution = degreeDistribution.getRobustSolitonDistribution();
-        int totalCount = experiment.getTotalCount();
-        int sensorCount = experiment.getSensorCount();
+//        int totalCount = experiment.getTotalCount();
+//        int sensorCount = experiment.getSensorCount();
+
+        int totalCount = Config.N;
+        int sensorCount = Config.K;
+        
         double sum = 0;
         for (double index : robustSolitonDistribution.keySet()) {
             Double prob = robustSolitonDistribution.get(index);
-            sum += index * prob * Config.REDUNDANCY;
+            sum += index * prob;
         }
         sum *= totalCount;
         copyNum = (int) (sum / sensorCount);
+        // 如果是EDFC的话，就是要发送冗余的感知数据包用于编码操作
+        if (type == NodeTypeEnum.EDFC || type == NodeTypeEnum.MOWELFC || type == NodeTypeEnum.MOWOELFC || type == NodeTypeEnum.MOW_LT) copyNum *= Config.REDUNDANCY;
         return copyNum;
     }
 }

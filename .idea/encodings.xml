@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionDestroyExp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheFourNewDegreeDistribution.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

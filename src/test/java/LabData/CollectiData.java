@@ -22,9 +22,9 @@ public class CollectiData {
         System.out.println("---开始写文件啦---");
 
 
-        File file = new File("G:/lab/LabData/demo.txt");
+        File file = new File("G:/lab/LabData/Test/demo.txt");
         StringBuffer str = new StringBuffer();
-        FileWriter fw = new FileWriter("G:/lab/LabData/demo.txt", true);
+        FileWriter fw = new FileWriter("G:/lab/LabData/Test/demo.txt", true);
         Set set = map.entrySet();
         Iterator iterator = set.iterator();
         while (iterator.hasNext()) {
@@ -38,7 +38,7 @@ public class CollectiData {
     @Test
     public void test() throws IOException {
         String s = "123";
-        FileWriter file = new FileWriter("G:/lab/LabData/demo.txt", true);
+        FileWriter file = new FileWriter("G:/lab/LabData/Test/demo.txt", true);
         file.write(s);
         file.close();
     }

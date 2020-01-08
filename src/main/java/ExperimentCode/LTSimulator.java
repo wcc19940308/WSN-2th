@@ -14,11 +14,12 @@ import java.util.Map;
 // 模拟开始的编码行为
 public class LTSimulator {
     SpaceHelper spaceHelper;
-    Map<Integer, CodingPackage> packageInfo; // 网络中整个的数据包情况,记录数据包编号和数据包的情况
+    Map<Integer, CodingPackage> packageInfo; // 网络中整个的数据包情况,记录数据包编号和数据包具体信息
     Map<Integer, MixCodingPackage> mixPackageInfo; // 网络中用于二次编码的数据包的情况
     Map<Integer, Node> nodes;
-    // 为了防止收到重复包而做出的多余数据包转发操作的次数
-    int REDUNDANCY_WALK_LENGTH = 0;
+    public double walkLength = 0;
+    // 二次转发步长
+    public double REDUNDANCY_WALK_LENGTH = 0;
     // 传入初始化场景的布置
     public LTSimulator(SpaceHelper spaceHelper) {
         this.spaceHelper = spaceHelper;
@@ -31,19 +32,21 @@ public class LTSimulator {
     // 做好开始编码前的所有准备
     public void init(NodeTypeEnum type) {
         HashMap<Integer, Node> nodes = spaceHelper.uniformGenerateNodes();
-        // 度分布
+        // 将每个节点按照度分布分配相应的度
         spaceHelper.initDegree(nodes);
         // 初始化每个节点的邻居
         spaceHelper.initAddNeighbors(nodes);
         // 稳态分布
         spaceHelper.initSteadyState(nodes,type);
-        // 分区
-        if (spaceHelper.getType() == NodeTypeEnum.PARTITION_LT || spaceHelper.getType() == NodeTypeEnum.LAYER_AND_PARTITION_LT) {
-            spaceHelper.initPartition(nodes);
-        }
+        // 网络整体需要进行的一次步长,应该是网络中真正生成的编码数据包的数量 * 每个编码数据包的步长设定
+        walkLength = spaceHelper.getIntialWalkLength(nodes, type);
+
         // 分层
-        if (spaceHelper.getType() == NodeTypeEnum.LAYER_LT || spaceHelper.getType() == NodeTypeEnum.LAYER_AND_PARTITION_LT
-                || spaceHelper.getType() == NodeTypeEnum.NORMAL_BY_LAYER_LT) {
+        if (spaceHelper.getType() == NodeTypeEnum.LAYER_LT || spaceHelper.getType() == NodeTypeEnum.LAYER_AND_PARTITION_LT || spaceHelper.getType() == NodeTypeEnum.NORMAL_BY_LAYER_LT
+
+                || spaceHelper.getType() == NodeTypeEnum.MOWELFC || spaceHelper.getType() == NodeTypeEnum.MOWOELFC
+                || spaceHelper.getType() == NodeTypeEnum.MRFELFC || spaceHelper.getType() == NodeTypeEnum.MRFOELFC) {
+
             spaceHelper.initLayer(nodes);
         }
         // 产生数据包
@@ -51,17 +54,17 @@ public class LTSimulator {
         // TODO 以下这两个方法在编码过程中还应该要时刻运行
         // TODO 转移表这里是需要重新生成实验的地方，因为生成的转移表可能不符合现实条件，即总概率可能大于1
         // 初始化或者刷新转移表以及概率区间
-        initOrRefreshForwardingTable();
+        initOrRefreshForwardingTable(type);
         initOrRefreshForwardingTableProbInterval();
         // 数据包进行游走编码存储
-        singlecastEncoding();
-        //redundancySingleCastCoding();
-        // 如果是分区的还需要对节点进行二次编码
-        if (spaceHelper.getType() == NodeTypeEnum.PARTITION_LT || spaceHelper.getType() == NodeTypeEnum.LAYER_AND_PARTITION_LT) {
-            initOrRefreshMixForwardingTable();
-            initOrRefreshMixForwardingTableProbInterval();
-            // 如果没有下面这句就只是单纯的分区
-            //mixCoding(nodes);
+        if (type == NodeTypeEnum.EDFC
+
+                || type == NodeTypeEnum.MOWELFC || type == NodeTypeEnum.MOWOELFC
+                || type == NodeTypeEnum.MOW_LT ) {
+
+            EDFCSingleCastEncoding2();
+        } else {
+            singlecastEncoding();
         }
     }
 
@@ -69,24 +72,28 @@ public class LTSimulator {
     public void generatePackage() {
         // 数据包编号从1开始
         int packageId = 1;
+        int sensorCount = 0;
         // 对于网络中每个感知节点产生b个数据包
         for (int nodeId : nodes.keySet()) {
             // 如果是感知节点,那么对于这个感知节点产生b个数据包,并且赋上相应的分区号
             if (nodes.get(nodeId) instanceof LTSensorNode) {
+                sensorCount++;
+                // 注意这里会根据不同的编码策略产生不同数量的编码数据包
                 int copyNum = ((LTSensorNode) nodes.get(nodeId)).getCopyNum();
                 int regionIndex = (nodes.get(nodeId)).getRegion();
-                for (int i=0; i<copyNum; i++) {
+                for (int i = 0; i < copyNum; i++) {
                     CodingPackage pack = new CodingPackage(nodeId, nodeId, regionIndex
-                            ,Config.WALK_LENGTH, 0, StateEnum.ALIVE);
+                            , Config.WALK_LENGTH, 0, StateEnum.ALIVE);
                     packageInfo.put(packageId++, pack);
                 }
             }
         }
-        //System.out.println("一共有"+packageId+"个感知节点产生的数据包");
+        System.out.println("一共有" + sensorCount + "个感知节点用于产生数据包");
+        System.out.println("一共有" + packageInfo.size() + "个编码数据包");
     }
 
     // 初始化(更新)所有节点各自的转移表和概率区间
-    public void initOrRefreshForwardingTable() {
+    public void initOrRefreshForwardingTable(NodeTypeEnum type) {
         for (int nodeId : nodes.keySet()) {
             Node curNode = nodes.get(nodeId);
             // 对于存活的节点才更新转移表
@@ -105,7 +112,14 @@ public class LTSimulator {
                     int neighborId = neighbor.getId();
                     // 如果不是是到自身的转移
                     if (neighborId != curId) {
-                        double prob = Math.min(1, neighbor.getSteadyState() / curNode.getSteadyState()) / curNode.getM();
+                        double prob =  Math.min(1, neighbor.getSteadyState() / curNode.getSteadyState()) / curNode.getM();
+//                        if (type == NodeTypeEnum.MOWOELFC || type == NodeTypeEnum.MOWELFC || type == NodeTypeEnum.MOW_LT) {
+//                            // 概率转移表的设定
+//                            prob = Math.min(1, neighbor.getSteadyState() / curNode.getSteadyState()) / 5000;
+//                        } else if (type == NodeTypeEnum.MRFELFC || type == NodeTypeEnum.MRFOELFC || type == NodeTypeEnum.MRF_LT) {
+//                            prob = Math.min(1, neighbor.getSteadyState() / curNode.getSteadyState()) / curNode.getM();
+//                        }
+//                        double prob = Math.min(1 / curNode.getDegree(), neighbor.getSteadyState() / (neighbor.getDegree() * curNode.getSteadyState()));
                         notSelfProb += prob;
                         forwardingTable.put(neighborId, prob);
                     }
@@ -117,7 +131,6 @@ public class LTSimulator {
                 } else {
                     forwardingTable.put(curId, 1 - notSelfProb);
                 }
-
             }
         }
     }
@@ -228,7 +241,6 @@ public class LTSimulator {
                                     --step;
                                     break;
                                 }
-                                //}
                                 // 如果这个节点即没有达到指定的度，又没有收到过这个数据包，那么接收这个数据包
                                 // 这里需要再次判断step的值，因为前面可能减过了
                                 if (step == walkLength) {
@@ -238,6 +250,95 @@ public class LTSimulator {
                                 }
                             }
                         }
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    // EDFC的单播随机游走编码策略
+    public void EDFCSingleCastEncoding() {
+        // 遍历每个数据包进行随机游走，直至耗尽步数
+        for (int packId : packageInfo.keySet()) {
+            CodingPackage curCodingPackage = packageInfo.get(packId);
+            int step = curCodingPackage.getStep();
+            int walkLength = curCodingPackage.getWalkLength();
+            // 如果还没有走够设定的步长
+            while (step < walkLength && curCodingPackage.getState() == StateEnum.ALIVE) {
+                // 数据包当前位置
+                int curId = curCodingPackage.getCurId();
+                Node curNode = nodes.get(curId);
+                Map<Integer, Range<Double>> forwardingTableProbInterval
+                        = curNode.getForwardingTableProbInterval();
+                // 产生随机数，来选择需要传送数据包的节点
+                double random = Math.random() * 100;
+                for (int neighborId : forwardingTableProbInterval.keySet()) {
+                    Range<Double> range = forwardingTableProbInterval.get(neighborId);
+                    if (range.contains(random)) {
+                        // 用选择的邻居的信息更新数据包
+                        curCodingPackage.setCurId(neighborId);
+                        curCodingPackage.setStep(++step);
+                        // 如果步数已经用尽了，那么直接在这个邻居上将数据包存储下来
+                        if (step == walkLength) {
+                            Node node = nodes.get(neighborId);
+                            List<Integer> packList = node.getPackList();
+                            // 不满足度的要求且之前没有接收过，才进行编码。但是存是都要存的
+                            if (!checkDegree(node) && !packList.contains(curCodingPackage.getSensorId())) {
+                                node.setData(node.getData() ^ curCodingPackage.getSensorId());
+                            }
+                            // 因为是EDFC，所以数据包直接停留并接收
+                            packList.add(curCodingPackage.getSensorId());
+                        }
+                        // 注意！这里这个break是为了保证如果找到了合适的邻居节点能够跳出对邻居节点列表的轮询
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    // EDFC的单播随机游走编码策略2
+    public void EDFCSingleCastEncoding2() {
+        // 遍历每个数据包进行随机游走，直至耗尽步数
+        for (int packId : packageInfo.keySet()) {
+            CodingPackage curCodingPackage = packageInfo.get(packId);
+            int step = curCodingPackage.getStep();
+            int walkLength = curCodingPackage.getWalkLength();
+            // 如果还没有走够设定的步长
+            while (step < walkLength && curCodingPackage.getState() == StateEnum.ALIVE) {
+                // 数据包当前位置
+                int curId = curCodingPackage.getCurId();
+                Node curNode = nodes.get(curId);
+                Map<Integer, Range<Double>> forwardingTableProbInterval
+                        = curNode.getForwardingTableProbInterval();
+                // 产生随机数，来选择需要传送数据包的节点
+                double random = Math.random() * 100;
+                for (int neighborId : forwardingTableProbInterval.keySet()) {
+                    Range<Double> range = forwardingTableProbInterval.get(neighborId);
+                    if (range.contains(random)) {
+                        // 用选择的邻居的信息更新数据包
+                        curCodingPackage.setCurId(neighborId);
+                        curCodingPackage.setStep(++step);
+                        // 如果步数已经用尽了，那么直接在这个邻居上将数据包存储下来
+                        if (step == walkLength) {
+                            Node node = nodes.get(neighborId);
+                            if (checkDegree(node)) {
+                                curCodingPackage.setState(StateEnum.DIE);
+                                break;
+                            } else {
+                                // 如果该节点已经有了这个数据包的信息了，那么丢弃数据包
+                                if (node.getPackList().contains(curCodingPackage.getSensorId())) {
+                                    curCodingPackage.setState(StateEnum.DIE);
+                                } else {
+                                    node.getPackList().add(curCodingPackage.getSensorId());
+                                    node.setData(node.getData() ^ curCodingPackage.getSensorId());
+                                    curCodingPackage.setState(StateEnum.DIE);
+                                }
+                                break;
+                            }
+                        }
+                        // 为了保证选择完一个邻居后直接及时退出
                         break;
                     }
                 }
@@ -258,7 +359,7 @@ public class LTSimulator {
                 Node curNode = nodes.get(curId);
                 Map<Integer, Range<Double>> forwardingTableProbInterval
                         = curNode.getForwardingTableProbInterval();
-                // 产生随机数，来选择需要传送数据包的节点
+                // 产生随机数，来选择需要传送编码数据包的邻居节点
                 double random = Math.random() * 100;
                 for (int neighborId : forwardingTableProbInterval.keySet()) {
                     Range<Double> range = forwardingTableProbInterval.get(neighborId);
@@ -268,20 +369,18 @@ public class LTSimulator {
                         curCodingPackage.setStep(++step);
                         Node node = nodes.get(neighborId);
                         if (checkDegree(node)) {
-                            break;
+                            curCodingPackage.setState(StateEnum.DIE);
                         } else {
-                            // 如果该节点已经有了这个数据包的信息了
+                            // 如果该节点已经有了这个数据包的信息了，那么丢弃数据包
                             if (node.getPackList().contains(curCodingPackage.getSensorId())) {
-                                break;
+                                curCodingPackage.setState(StateEnum.DIE);
                             } else {
-                                if (curCodingPackage.getRegionIndex() == node.getRegion()) {
-                                    node.getPackList().add(curCodingPackage.getSensorId());
-                                    node.setData(node.getData() ^ curCodingPackage.getSensorId());
-                                    curCodingPackage.setState(StateEnum.DIE);
-                                }
+                                node.getPackList().add(curCodingPackage.getSensorId());
+                                node.setData(node.getData() ^ curCodingPackage.getSensorId());
+                                curCodingPackage.setState(StateEnum.DIE);
                             }
-                            break;
                         }
+                        break;
                     }
                 }
             }
@@ -290,10 +389,15 @@ public class LTSimulator {
 
     // 检查节点是否已经获得了指定的度，如果是，返回true，否则返回false
     public boolean checkDegree(Node node) {
-        if (node.getDegree() == node.getPackList().size()) {
-            return true;
-        } else {
+//        if (node.getDegree() == node.getPackList().size()) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        if (node.getDegree() > node.getPackList().size()) {
             return false;
+        } else {
+            return true;
         }
     }
 

@@ -23,7 +23,7 @@ public class LTDegreeDistribution extends ExperimentCode.DegreeDistribution {
         this.R = c * Math.log(k / δ) * Math.sqrt(k);
         this.peak = Math.ceil(k / R);
         System.out.println("集中式LT需要的节点数量：" + (k + c * Math.sqrt(k) * Math.log(k / δ) * Math.log(k / δ)));
-        System.out.println("尖峰值为："+peak);
+        System.out.println("尖峰值为：" + peak);
     }
 
     // 产生哈希表用于索引，哈希表中记录了各个不同的度所对应的概率
@@ -34,7 +34,7 @@ public class LTDegreeDistribution extends ExperimentCode.DegreeDistribution {
         double prob = 0;
         Map<Double, Double> probTable = new LinkedHashMap<Double, Double>();
         // 计算理想孤子ρ那一部分
-        for (double i=1; i<=k; i++) {
+        for (double i = 1; i <= k; i++) {
             if (i == 1) {
                 β += 1 / k;
             } else {
@@ -43,7 +43,7 @@ public class LTDegreeDistribution extends ExperimentCode.DegreeDistribution {
         }
         // 计算鲁棒孤子τ那一部分
         // Math.ceil用于修正k/R的尖峰部分，如果不向上取整则遍历i的过程中可能取不到k/R！
-        for (double i=1; i<=Math.ceil(k/R); i++) {
+        for (double i = 1; i <= Math.ceil(k / R); i++) {
             if (i >= 1 && i <= k / R - 1) {
                 β += R / (i * k);
             } else if (i == Math.ceil(k / R)) {
@@ -51,7 +51,7 @@ public class LTDegreeDistribution extends ExperimentCode.DegreeDistribution {
             }
         }
         //System.out.println(β);
-        for (double i=1; i<=k; i++) {
+        for (double i = 1; i <= k; i++) {
             if (i == 1) {
                 prob = ((1 / k) + R / (i * k)) / β;
                 // 度为i的概率是prob
@@ -63,7 +63,7 @@ public class LTDegreeDistribution extends ExperimentCode.DegreeDistribution {
                 prob = (1 / (i * (i - 1)) + (R * Math.log(R / δ)) / k) / β;
                 probTable.put(i, prob);
             } else {
-                prob = (1 / (i * (i - 1)))/β;
+                prob = (1 / (i * (i - 1))) / β;
                 probTable.put(i, prob);
             }
         }
@@ -80,17 +80,17 @@ public class LTDegreeDistribution extends ExperimentCode.DegreeDistribution {
             double prob = degreeDistribution.get(index);
             // 因为度分布函数表和概率区间表长度一直，而且概率区间表是由度分布函数表推出的，所以这里使用度分布函数的长度
             // 主要是为了概率区间能够覆盖整个0-100区域，防止在为节点分配编码度的时候没有对应的概率区间而导致度为0的情况出现
-            if (index == degreeDistribution.size()-1)
+            if (index == degreeDistribution.size() - 1)
                 end = 100;
-            else{
+            else {
                 // 将区间放大100倍，便于将各个度区分开来
                 end = prob * 100 + start;
             }
             probInterval.put(index, Range.closedOpen(start, end));
             start = end;
         }
-        //System.out.println(probInterval.size());
-        return  probInterval;
+        System.out.println(probInterval.size());
+        return probInterval;
     }
 
     // 获得尖峰值的概率，用于计算尖峰值节点的数量

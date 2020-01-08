@@ -9,7 +9,7 @@ import lombok.Setter;
 // 对于数据包自身的编号，记录在LTSimulator中的packageInfo信息中
 public class CodingPackage {
     int sensorId; // 数据包中携带的源信息
-    int curId; // 数据包当前所处的位置处的节点的ID,用于标识当前数据包所在的位置！
+    int curId; // 标识当前数据包所在的位置！
     int regionIndex; // 数据包所属的区
     int walkLength; // 随机游走步长设定
     int step; // 已经走的步数

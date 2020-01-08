@@ -18,7 +18,7 @@ public class DifferentDestory {
         Config.DESTORY_RATIO = 0;
         for (int i = 1; i <= 10; i++) {
             Config.DESTORY_RATIO += 0.01;
-            for (int j=0; j<=50; j++)
+            for (int j = 0; j <= 50; j++)
                 init(Config.DESTORY_RATIO, out);
         }
         out.flush();
@@ -38,6 +38,7 @@ public class DifferentDestory {
         DegreeDistribution ELFCdegreeDistribution = new LTDegreeDistribution(0.01,0.05,5000);
         DegreeDistribution OELFCdegreeDistribution = new LTDegreeDistribution(0.01, 0.05, 5000);
 
+        // 开始进行编码操作
         LTSimulator LTSimulator = new LTSimulator(
                 new SpaceHelper(LTExperiment, LTdegreeDistribution, NodeTypeEnum.LT));
         LTSimulator ELFCSimulator = new LTSimulator(
@@ -62,6 +63,7 @@ public class DifferentDestory {
         int LTSize = LTSink.getOneDegreeData().size();
         int ELFCSize = ELFCSink.getOneDegreeData().size();
         int OELFCSize = OELFCSink.getOneDegreeData().size();
+        System.out.println("LTSize:" + LTSize + " ELFCSize:" + ELFCSize + " OELFCSize:" + OELFCSize);
 
         NumberFormat instance = NumberFormat.getInstance();
         instance.setMaximumFractionDigits(2);

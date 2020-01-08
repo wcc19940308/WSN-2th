@@ -87,10 +87,11 @@ public abstract class Node {
         return maxDegree;
     }
 
-    // 改进后：考虑将节点的邻居数量作为M
-    public int getM() {
+    // 改进后：考虑将节点的邻居数量作为M，这里是计算概率转移表中的M
+    public int  getM() {
         detectNeighbors();
         return neighbors.size();
+//        return 5000;
     }
 
     // 这里直接在父类中写了分层分区的方法，真正调用的时候先判断是否是分层分区类型在调用这些方法
@@ -112,7 +113,7 @@ public abstract class Node {
         return region;
     }
 
-    public int initCopyNum(Experiment experiment, DegreeDistribution degreeDistribution) {
+    public int initCopyNum(Experiment experiment, DegreeDistribution degreeDistribution, NodeTypeEnum type) {
         return 0;
     }
 
