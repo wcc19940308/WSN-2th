@@ -34,9 +34,9 @@ public class NewDegreeDistribution extends ExperimentCode.DegreeDistribution {
         double β = 0;
         double W = 0;
         double prob = 0;
-        Map<Double, Double> probTable = new LinkedHashMap<Double, Double>();
+        Map<Double, Double> probTable = new LinkedHashMap<>();
         // 计算理想孤子ρ那一部分
-        for (double i=1; i<=k; i++) {
+        for (double i = 1; i <= k; i++) {
             if (i == 1) {
                 β += 1 / k;
             } else {
@@ -45,7 +45,7 @@ public class NewDegreeDistribution extends ExperimentCode.DegreeDistribution {
         }
         // 计算鲁棒孤子τ那一部分
         // Math.ceil用于修正k/R的尖峰部分，如果不向上取整则遍历i的过程中可能取不到k/R！
-        for (double i=1; i<=Math.ceil(k/R); i++) {
+        for (double i = 1; i <= Math.ceil(k / R); i++) {
             if (i >= 1 && i <= k / R - 1) {
                 β += R / (i * k);
             } else if (i == Math.ceil(k / R)) {
@@ -61,12 +61,17 @@ public class NewDegreeDistribution extends ExperimentCode.DegreeDistribution {
 
 
         // 计算概率函数表
-        for (double i=1; i<=k; i++) {
+        for (double i = 1; i <= k; i++) {
+            // 注意，度为1和度为2的指数分布调整了位置
             if (i == 1) {
-                prob = (b * ((1 / k) + R / (i * k)) + a * (1 / 2)) / W;
+                prob = (b * ((1 / k) + R / (i * k)) + a * (1 / 4)) / W;
                 // 度为i的概率是prob
                 probTable.put(i, prob);
-            } else if (i > 1 && i <= k / R - 1) {
+            } else if (i == 2) {
+                prob = (b * (1 / (i * (i - 1)) + R / (i * k)) + a * (1 / 2)) / W;
+                // 度为i的概率是prob
+                probTable.put(i, prob);
+            } else if (i > 2 && i <= k / R - 1) {
                 prob = (b * (1 / (i * (i - 1)) + R / (i * k)) + a * Math.pow(1 / 2, i)) / W;
                 probTable.put(i, prob);
             } else if (i == Math.ceil(k / R)) {
