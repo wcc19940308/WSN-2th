@@ -39,7 +39,7 @@ public class Sink {
     public boolean collectPackage(NodeTypeEnum type) {
         boolean flag = false;
         // 存储了一段时间，有些节点遭到破坏
-//        randomDestory();
+        randomDestory();
         if (type == NodeTypeEnum.LAYER_LT || type == NodeTypeEnum.LAYER_AND_PARTITION_LT
 
                 || type == NodeTypeEnum.MOWOELFC || type == NodeTypeEnum.MRFOELFC) { // OELFC

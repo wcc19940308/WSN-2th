@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed1a0262-67ec-455c-8cf8-978aa940f07a" name="Default" comment="1-8">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DecodingOverheadAndSuccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NormalDecoding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_beta_1.xml" beforeDir="false" />
+    <list default="true" id="227cfca3-e69f-4d4b-b977-01a8a7c838ae" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DestoryExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberCompare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jfreechart_1_0_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jcommon_1_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WSN.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WSN.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdu.cloud.wsn.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/AverageDegreeOfNewDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/AverageDegreeOfNewDistribution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/GenerateXAndY.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/GenerateXAndY.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NewDegreeDistrubition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NewDegreeDistrubition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GraduationPaper/README" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ExperimentCode/Sink.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,16 +42,16 @@
       </map>
     </option>
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+  <component name="FavoritesManager">
+    <favorites_list name="hdu.cloud.wsn" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
+      <file leaf-file-name="DestoryExp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DestoryExp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,20 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/LabData/CollectiData.java">
+      <file leaf-file-name="EncodingNumberCompare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1066">
-              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+            <state relative-caret-position="76">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,74 +71,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberOfNewDistribution.java">
+      <file leaf-file-name="GaussMatrix.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="912">
+              <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/Demo.java">
+      <file leaf-file-name="StorageOverheadExp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/StorageOverheadExp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/GenerateXAndY.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="PartTwoExp.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="247">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DecodingOverheadAndSuccess.java">
+      <file leaf-file-name="RandomWalkLength.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/AverageDegreeOfNewDistribution.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NormalDecoding.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1118">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+            <state relative-caret-position="855">
+              <caret line="51" column="46" selection-start-line="50" selection-start-column="30" selection-end-line="51" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,41 +121,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setDegree</find>
-      <find>initPartition</find>
-      <find>highDegreeData</find>
-      <find>EDFC1度数据包数量为</find>
-      <find>layer</find>
-      <find>initLayer</find>
-      <find>.EDFC</find>
-      <find>NodeTypeEnum.EDFC</find>
-      <find>DecodingPackage</find>
-      <find>分层的普通LT失败</find>
-      <find>REDUNDANCY</find>
-      <find>概率转移表</find>
-      <find>OELFC---失败---恢复源数据</find>
-      <find>layerDecode</find>
-      <find>普通LT---失败---</find>
-      <find>======= begin sendRandomDecodingPackage =======</find>
-      <find>System.err.p</find>
-      <find>normalDecode</find>
-      <find>当前收到编码包数量为:</find>
-      <find>type == NodeTypeEnum.MOWELFC</find>
-      <find>packageNum</find>
-      <find>REDUNDANCY_WALK_LENGTH</find>
-      <find>initlayer</find>
-      <find>getM()</find>
-      <find>copynum</find>
-      <find>copy</find>
-      <find>copyNum</find>
-      <find>Config.N</find>
-      <find>度分布</find>
-      <find>主动</find>
+      <find>ELFC</find>
+      <find>DESTORY_RATIO</find>
+      <find>DESTORY_RADIU</find>
     </findStrings>
     <replaceStrings>
-      <replace>LEFC</replace>
       <replace />
-      <replace>LPFC</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -200,59 +135,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/CodingPackage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/README.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/EnergyAndDisseminationOverheadExp.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LabData/AllWalkLengthSituation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PartitionTest/SimulatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/Example.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/NormalLTDecoding.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/EDFCTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/EDFCDegreeCompare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/StorageOverheadExp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/DisseminationCompare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/DecodingPackage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/MRFTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PartitionTest/TestDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/FourStrategyDecodingRate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/NodeTypeEnum.java" />
-        <option value="$PROJECT_DIR$/src/test/java/LabData/WalkLengthRatio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/WalkLengthRatio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/AllWalkLength.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/SixStrategyNormalDecoding.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/CollectionPeriod.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/TwoStrategyDecodingRate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/LTSensorNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/EDFCTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndN.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndNDecodingRatio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndNDecodingNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/NormalLTDecoding.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberOfNewDistribution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NewDegreeDistrubition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/AverageDegreeOfNewDistribution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength/ELFCCollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength/OELFCCollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength/ActiveCollection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NormalDecoding.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DecodingOverheadAndSuccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/GenerateXAndY.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/README" />
-        <option value="$PROJECT_DIR$/src/test/java/LabData/CollectiData.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DestoryExp.java" />
         <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberCompare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -261,10 +159,14 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="367" />
-    <option name="width" value="1440" />
-    <option name="height" value="810" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1391" />
+    <option name="y" value="23" />
+    <option name="width" value="1391" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -274,34 +176,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ExperimentCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -309,53 +218,64 @@
               <item name="GraduationPaper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="GraduationPaper" type="462c0819:PsiDirectoryNode" />
-              <item name="PartTwo" type="462c0819:PsiDirectoryNode" />
+              <item name="hyw" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WSN-2th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
               <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hdu.cloud.wsn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WSN-2th" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="LabData" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="GraduationPaper.PartTwo.RandomWalkLength" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\wcc\WSN\WSN-2th\src\main\java\GraduationPaper" />
-      <recent name="C:\Users\Administrator\Desktop\wcc\WSN\WSN-2th\src\main\java\GraduationPaper\PartOne" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -369,44 +289,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RandomWalkLength">
-    <configuration default="true" type="Applet">
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EncodingNumberOfNewDistribution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraduationPaper.PartTwo.EncodingNumberOfNewDistribution" />
-      <module name="WSN" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GraduationPaper.PartTwo.RandomWalkLength.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewDegreeDistrubition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraduationPaper.PartTwo.NewDegreeDistrubition" />
-      <module name="WSN" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GraduationPaper.PartTwo.RandomWalkLength.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NormalDecoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraduationPaper.PartTwo.NormalDecoding" />
-      <module name="WSN" />
+  <component name="RunManager" selected="Application.GaussMatrix">
+    <configuration name="DestoryExp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraduationPaper.PartTwo.DestoryExp" />
+      <module name="hdu.cloud.wsn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -414,13 +300,32 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    </configuration>
+    <configuration name="EncodingNumberCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraduationPaper.PartTwo.EncodingNumberCompare" />
+      <module name="hdu.cloud.wsn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GraduationPaper.PartTwo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="GaussMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraduationPaper.hyw.GaussMatrix" />
+      <module name="hdu.cloud.wsn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GraduationPaper.hyw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="RandomWalkLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GraduationPaper.PartTwo.RandomWalkLength" />
-      <module name="WSN" />
+      <module name="hdu.cloud.wsn" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -428,374 +333,225 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomWalkRatio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraduationPaper.PartTwo.RandomWalkRatio" />
-      <module name="WSN" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GraduationPaper.PartTwo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
-    <configuration default="true" type="TestNG">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.EncodingNumberOfNewDistribution" />
-      <item itemvalue="Application.NewDegreeDistrubition" />
-      <item itemvalue="Application.RandomWalkRatio" />
-      <item itemvalue="Application.NormalDecoding" />
       <item itemvalue="Application.RandomWalkLength" />
+      <item itemvalue="Application.EncodingNumberCompare" />
+      <item itemvalue="Application.DestoryExp" />
+      <item itemvalue="Application.GaussMatrix" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GaussMatrix" />
+        <item itemvalue="Application.DestoryExp" />
+        <item itemvalue="Application.EncodingNumberCompare" />
         <item itemvalue="Application.RandomWalkLength" />
-        <item itemvalue="Application.RandomWalkRatio" />
-        <item itemvalue="Application.NormalDecoding" />
-        <item itemvalue="Application.EncodingNumberOfNewDistribution" />
-        <item itemvalue="Application.NewDegreeDistrubition" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed1a0262-67ec-455c-8cf8-978aa940f07a" name="Default" comment="" />
-      <created>1545138561399</created>
+      <changelist id="227cfca3-e69f-4d4b-b977-01a8a7c838ae" name="Default" comment="" />
+      <created>1583128038755</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1545138561399</updated>
-      <workItem from="1545138562548" duration="266000" />
-      <workItem from="1545138889958" duration="170000" />
-      <workItem from="1545139173489" duration="4322000" />
-      <workItem from="1545194795481" duration="1517000" />
-      <workItem from="1545208974205" duration="146000" />
-      <workItem from="1545209138420" duration="85000" />
-      <workItem from="1545209240819" duration="68318000" />
-      <workItem from="1547000521377" duration="518000" />
-      <workItem from="1547003048996" duration="2263000" />
-      <workItem from="1547176232987" duration="593000" />
-      <workItem from="1547690499286" duration="30234000" />
-      <workItem from="1550058085530" duration="2225000" />
-      <workItem from="1550131446277" duration="599000" />
-      <workItem from="1550214779042" duration="593000" />
-      <workItem from="1550239244923" duration="7531000" />
-      <workItem from="1550887418183" duration="8589000" />
-      <workItem from="1551075474556" duration="72668000" />
-      <workItem from="1552527480791" duration="1197000" />
-      <workItem from="1552531483089" duration="597000" />
-      <workItem from="1552632090948" duration="598000" />
-      <workItem from="1552632975563" duration="1389000" />
-      <workItem from="1575860739103" duration="7722000" />
-      <workItem from="1575949278216" duration="12816000" />
-      <workItem from="1576052071774" duration="12733000" />
-      <workItem from="1576123568814" duration="78777000" />
-      <workItem from="1577274634396" duration="80518000" />
-      <workItem from="1582427014454" duration="391000" />
-      <workItem from="1582960457536" duration="1798000" />
+      <updated>1583128038755</updated>
+      <workItem from="1583128040265" duration="232000" />
+      <workItem from="1583128310661" duration="1033000" />
+      <workItem from="1583129408441" duration="47000" />
+      <workItem from="1583129503306" duration="892000" />
+      <workItem from="1583157364275" duration="6668000" />
+      <workItem from="1583384442781" duration="5753000" />
     </task>
-    <task id="LOCAL-00001" summary="1-8">
-      <created>1578486084936</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1578486084936</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 55m 17s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 55m 28s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 57m 07s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 57m 36s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 13h 57m 45s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 14h 45m 48s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 14h 46m 05s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.25 at 16h 29m 32s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDemo_calculateRadiuTest - 2019.02.26 at 10h 06m 33s.xml">
-      <configuration name="TestDemo.calculateRadiuTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CollectiData_test - 2019.12.10 at 16h 50m 08s.xml">
-      <configuration name="CollectiData.test" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="399173000" />
+    <option name="totallyTimeSpent" value="14625000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-1391" y="23" width="1391" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28053334" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2889813" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3191268" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32969698" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2628205" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948717" />
+      <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.26715177" />
-      <window_info anchor="bottom" id="Duplicates" order="13" weight="0.54677755" />
-      <window_info anchor="bottom" id="CheckStyle" order="14" />
-      <window_info anchor="bottom" id="JProfiler" order="15" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7523511" visible="true" weight="0.30837658" />
+      <window_info anchor="bottom" id="JProfiler" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.5008696" side_tool="true" weight="0.29756796" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.18205129" />
+      <window_info id="Favorites" order="2" sideWeight="0.24764891" side_tool="true" visible="true" weight="0.30837658" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="ASM" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="10" />
-      <window_info anchor="right" id="ASMPlugin" order="11" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25208333" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3296146" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29310346" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29107505" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.34787017" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="ASM" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="10" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="12-26" />
-    <MESSAGE value="1-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="1-8" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java</url>
-          <line>456</line>
-          <properties class="ExperimentCode.Sink" method="randomDestory">
+          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberCompare.java</url>
+          <line>25</line>
+          <properties class="GraduationPaper.PartTwo.EncodingNumberCompare" method="getEncodingNumber">
             <option name="EMULATED" value="true" />
           </properties>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java</url>
-          <line>396</line>
-          <properties class="ExperimentCode.Sink" method="normalLayerDecode">
+          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java</url>
+          <line>25</line>
+          <properties class="GraduationPaper.hyw.GaussMatrix" method="main">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/EDFCDegreeCompare.java</url>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java</url>
           <line>31</line>
-          <properties />
-          <option name="timeStamp" value="10" />
+          <properties class="GraduationPaper.hyw.GaussMatrix" method="preProcess">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/EDFCDegreeCompare.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/MRFTest.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/MRFTest.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/MRFTest.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="16" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java</url>
+          <line>43</line>
+          <properties class="GraduationPaper.hyw.GaussMatrix" method="getResult">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="curNode" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/MRFTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="247">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="51" column="46" selection-start-line="50" selection-start-column="30" selection-end-line="51" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="429" column="13" lean-forward="true" selection-start-line="429" selection-start-column="13" selection-end-line="429" selection-end-column="13" />
+        <state relative-caret-position="266">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/PartitionSensorNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/FourStrategyDecodingRate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="83" column="20" lean-forward="true" selection-start-line="64" selection-start-column="6" selection-end-line="83" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionDestroyExp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/NormalLTDecoding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheNumberOfAandB.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/CodingPackage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/AverageDegreeOfNewDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/EDFCTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="684">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -804,168 +560,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndNDecodingNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="2242">
+          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndNDecodingRatio.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="65" lean-forward="true" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="589">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/StorageOverheadExp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
-          <caret line="115" column="70" selection-start-line="115" selection-start-column="70" selection-end-line="115" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/TwoStrategyDecodingRate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/EncodingNumberOfNewDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/WalkLengthRatio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="80" column="5" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="80" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PartitionTest/DistrubutionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/DegreeDistibutionGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/DecodingRatio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="32" column="67" lean-forward="true" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/MyDegreeDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheFourNewDegreeDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="31" column="101" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2158">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/DegreeDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NewDegreeDistrubition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio/ActiveCollection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio/ELFCCollection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio/OELFCCollection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength/ELFCCollection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength/OELFCCollection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength/ActiveCollection.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/WalkLengthRatio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/NodeTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/CollectionPeriod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1074">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="912">
+          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -974,190 +601,287 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/NormalLTDecoding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="95">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndNDecodingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/CodingPackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/SpaceHelper.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2994">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/SixStrategyNormalDecoding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1924">
-          <caret line="74" column="70" lean-forward="true" selection-start-line="74" selection-start-column="70" selection-end-line="74" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="254" selection-start-line="254" selection-end-line="254" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/java/src.zip!/java/util/TreeMap.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/AllWalkLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-423">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberOfNewDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/GenerateXAndY.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/AverageDegreeOfNewDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NormalDecoding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
-          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DecodingOverheadAndSuccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="589">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1066">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/CollectiData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="912">
+          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/NormalLTDecoding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndNDecodingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/CodingPackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="ideajad">
-    <property name="annotate" value="false" />
-    <property name="annotateFully" value="false" />
-    <property name="braces" value="false" />
-    <property name="clear" value="false" />
-    <property name="confirmNavigationTriggeredDecompile" value="true" />
-    <property name="dead" value="true" />
-    <property name="defaultInitializers" value="false" />
-    <property name="dissassemblerOnly" value="false" />
-    <property name="fieldsFirst" value="true" />
-    <property name="fileExtension" value="java" />
-    <property name="fullyQualifiedNames" value="false" />
-    <property name="indentation" value="4" />
-    <property name="intRadix" value="10" />
-    <property name="lineNumbersAsComments" value="true" />
-    <property name="longRadix" value="10" />
-    <property name="maxStringLength" value="64" />
-    <property name="nocast" value="false" />
-    <property name="noclass" value="false" />
-    <property name="nocode" value="false" />
-    <property name="noconv" value="false" />
-    <property name="noctor" value="false" />
-    <property name="nodos" value="false" />
-    <property name="nofd" value="false" />
-    <property name="noinner" value="false" />
-    <property name="nolvt" value="false" />
-    <property name="nonlb" value="false" />
-    <property name="outputDirectory" value="" />
-    <property name="packFields" value="3" />
-    <property name="packImports" value="7" />
-    <property name="prefixNumericalClasses" value="_cls" />
-    <property name="prefixNumericalFields" value="_fld" />
-    <property name="prefixNumericalLocals" value="_lcl" />
-    <property name="prefixNumericalMethods" value="_mth" />
-    <property name="prefixNumericalParameters" value="_prm" />
-    <property name="prefixUnusedExceptions" value="_ex" />
-    <property name="readonly" value="false" />
-    <property name="safe" value="false" />
-    <property name="sort" value="false" />
-    <property name="spaceAfterKeyword" value="false" />
-    <property name="splitStringsAtNewline" value="false" />
-    <property name="useTabs" value="false" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/NormalLTDecoding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/OverestimationOfKAndNDecodingNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="123" column="31" selection-start-line="123" selection-start-column="31" selection-end-line="123" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/google/guava/guava/21.0/guava-21.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2884" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/NormalLTDecoding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/CodingPackage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/PartitionSensorNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSensorNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="87" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DecodingOverheadAndSuccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberOfNewDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-447">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/NewDegreeDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="84" column="24" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/LabData/DifferentDestory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="76" column="5" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/AverageDegreeOfNewDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/NormalDecoding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTSimulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ExperimentCode/Sink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="456" column="16" selection-start-line="456" selection-start-column="16" selection-end-line="456" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartOne/StorageOverheadExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/PartTwoExp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="51" column="46" selection-start-line="50" selection-start-column="30" selection-end-line="51" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/DestoryExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/EncodingNumberCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GraduationPaper/hyw/GaussMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1210,7 +934,20 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>WSN</last-edited>
+          <last-edited>hdu.cloud.wsn</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1222,7 +959,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.google.guava:guava:21.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

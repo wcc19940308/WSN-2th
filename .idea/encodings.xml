@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/ExperimentCode/LTDegreeDistribution.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/NewDistributionDestroyExp.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/test/java/DegreeDistributionOptimization/TheFourNewDegreeDistribution.java" charset="GBK" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkLength.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/GraduationPaper/PartTwo/RandomWalkRatio.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

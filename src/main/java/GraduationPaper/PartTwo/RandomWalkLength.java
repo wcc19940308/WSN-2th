@@ -48,12 +48,13 @@ public class RandomWalkLength {
 
     // 50到1000的初始步长，每个实验20次  2-29
     public static void main(String[] args) throws IOException {
-        File file = new File("G:/lab/GraduationPaper/PartTwo/ERSD使用主动收集方式随机游走总步长.txt");
+        File file = new File("/Users/wangchenchao/Desktop/" +
+                "毕业论文/figures/RSD和ERSD随机游走.txt");
         file.createNewFile();
         BufferedWriter out = new BufferedWriter(new FileWriter(file));
         Config.WALK_LENGTH = 50;
         for (int i = 0; i < 20; i++) {
-            for (int j = 0; j < 20; j++) {
+            for (int j = 0; j < 5; j++) {
                 activeCollection(out);
             }
             Config.WALK_LENGTH += 50;
