@@ -16,13 +16,13 @@ import java.text.NumberFormat;
 
 public class DestoryExp {
 	public static void main(String[] args) throws IOException {
-		File file = new File("/Users/wangchenchao/Desktop/毕业论文/figures/RSD和ERSD破坏实验20以上.txt");
+		File file = new File("G:/lab/GraduationPaper/PartTwo/RSD和ERSD30-40破坏实验.txt");
 		file.createNewFile();
 		BufferedWriter out = new BufferedWriter(new FileWriter(file));
 		Config.DESTORY_RATIO = 0.2;
 		for (int i = 1; i <= 30; i++) {
 			Config.DESTORY_RATIO += 0.01;
-			// for (int j = 0; j <= 20; j++)
+			for (int j = 0; j <= 20; j++)
 				init(Config.DESTORY_RATIO, out);
 		}
 		out.flush();
